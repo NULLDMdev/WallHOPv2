@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.warning-box {
+    background: rgba(255, 0, 0, 0.2);
+    border: 3px solid #ff0000;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px 0;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+    50% { box-shadow: 0 0 40px rgba(255, 0, 0, 0.8); }
+}
+
+.warning-box h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.warning-box p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.features {
+    margin: 50px 0;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.download {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.download h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.download ol {
+    text-align: left;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.download code {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+}
+
+.download-btn {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    color: #fff;
+    border: none;
+    padding: 20px 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.4);
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(255, 0, 0, 0.6);
+}
+
+.risks {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 50px 0;
+}
+
+.risks h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.risks ul {
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.risks li {
+    padding: 10px;
+    border-left: 4px solid #ff0000;
+    margin: 10px 0;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    opacity: 0.8;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.disclaimer {
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
